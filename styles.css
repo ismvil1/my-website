@@ -1,0 +1,141 @@
+/* Reset some basic elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #e0f7fa; /* Updated background color to a light teal */
+}
+
+header {
+    background-color: #0d47a1; /* Deep blue for the header */
+    color: white;
+    padding: 0.5rem 0; /* Reduced padding */
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem; /* Reduced font size */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 0.5rem 0; /* Reduced padding */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background-color: #1976d2; /* Light blue for nav links */
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    font-size: 0.9rem; /* Smaller font size */
+}
+
+nav a:hover {
+    background-color: #1565c0; /* Slightly darker blue on hover */
+}
+
+main {
+    padding: 1rem;
+    max-width: 1000px;
+    margin: auto;
+}
+
+footer {
+    background-color: #0d47a1;
+    color: white;
+    text-align: center;
+    padding: 0.5rem 0; /* Reduced padding */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 0.8rem; /* Reduced font size */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem 0;
+}
+
+.intro, .about, .contact {
+    background: white;
+    padding: 2rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.contact-info {
+    margin-bottom: 2rem;
+}
+
+.contact-info p {
+    margin: 0.5rem 0;
+}
+
+.contact-info a {
+    color: #0d47a1;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Form styling */
+form {
+    display: grid;
+    grid-gap: 1rem;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form textarea, form button {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #0d47a1;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #1565c0;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    form label {
+        margin-top: 10px;
+    }
+    
+    form input, form textarea, form button {
+        margin-top: 5px;
+    }
+}
